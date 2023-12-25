@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A page for exploring basic HTML documents">
+<link rel="stylesheet" href="style.css">
+<script src="scripts.js"></script>
+</head>
+<body>
+     <div class="osnova"> 
+         <div class="header"> 
+            
+             <div class="kirpich1">
+                 <div class="pod-menu-i-logo">
+                     <div class="osnova-pod-logo">
+
+                         </div>
+
+                     <!-- . -->
+
+                     
+                       <div class="nadpisi">
+                         <div class="knopka1">
+                             <a class="nadpis1" href="">
+                                Главная
+                             </a>
+                         </div>
+
+                         <div class="knopka2">
+                             <a class="nadpis1" href="">
+                                О нас
+                             </a> 
+                         </div>
+
+                         <div class="knopka3">
+                             <a class="nadpis1" href="">
+                                Записаться
+                             </a> 
+                         </div>
+
+                         <div class="knopka4">
+                            <a class="nadpis1" href="">
+                               Поддержка
+                            </a> 
+                        </div>
+                    
+                 </div>
+
+                 </div>
+             </div>
+
+             <div class="kirpich2">
+                 <div class="osnova-pod-zagolovok">
+                   <div class="fon">
+                    <div class="osnova-zagolovka">
+                        <div class="zagolovok">
+                          <a style="text-decoration: none; color: #ffffff; font-size: 18px; font-weight: bold; text-align: center;">
+                            Программистика: Онлайн школа для превращения в мастера кода
+                          </a>
+                        </div>
+                      </div>
+
+                     <div class="poisk-stroka">
+                        
+                    <form id="form" role="search">
+                        <input type="search" id="query" name="q"
+                           placeholder="Искать..."
+                           aria-label="Search through site content">
+                        <button>
+                          <svg viewBox="0 0 1024 1024">
+                            <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path>
+                          </svg>
+                        </button>
+                      </form>
+
+                      <script>
+                                                                                                        function highlightSearchTerm() {
+                                                                                const query = document.getElementById('query').value.toLowerCase();
+                                                                                const bodyTextNodes = [...document.body.getElementsByTagName('*')].filter(el => {
+                                                                                  return el.nodeType === Node.ELEMENT_NODE && el.childNodes.length === 1 && el.childNodes[0].nodeType === Node.TEXT_NODE && el.tagName.toLowerCase() !== 'script' && el.tagName.toLowerCase() !== 'style' && el.className !== 'highlight';
+                                                                                });
+
+                                                                                // Remove any existing highlights
+                                                                                document.querySelectorAll('.highlight').forEach(function(highlight) {
+                                                                                  const parent = highlight.parentNode;
+                                                                                  parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+                                                                                  parent.normalize(); // Merges adjacent text nodes
+                                                                                });
+
+                                                                                if (!query) {
+                                                                                  return;
+                                                                                }
+
+                                                                                // Highlight text nodes
+                                                                                bodyTextNodes.forEach(node => {
+                                                                                  const nodeText = node.textContent;
+                                                                                  if (nodeText.toLowerCase().indexOf(query) !== -1) {
+                                                                                    const highlightedText = document.createElement('span');
+                                                                                    highlightedText.className = 'highlight';
+                                                                                    highlightedText.textContent = node.textContent.substring(nodeText.toLowerCase().indexOf(query), nodeText.toLowerCase().indexOf(query) + query.length);
+
+                                                                                    const beforeText = document.createTextNode(nodeText.substring(0, nodeText.toLowerCase().indexOf(query)));
+                                                                                    const afterText = document.createTextNode(nodeText.substring(nodeText.toLowerCase().indexOf(query) + query.length, nodeText.length));
+
+                                                                                    node.textContent = ''; // Clear original text
+                                                                                    node.appendChild(beforeText);
+                                                                                    node.appendChild(highlightedText);
+                                                                                    node.appendChild(afterText);
+                                                                                  }
+                                                                                });
+                                                                              }
+
+                                                                              document.getElementById('form').addEventListener('submit', function(event) {
+                                                                                event.preventDefault();
+                                                                                highlightSearchTerm();
+                                                                              });
+
+                      </script>
+
+                     </div>
+                     <!-- poisk-stroka -->
+                    </div>
+                    <!-- fon -->
+                 </div> 
+             <!-- osnova-pod-zagolovok -->
+             
+             </div>
+
+             <div class="kirpich3">
+               <div class="osnova-pod-napravlenia">
+                 <div class="napravlenia">
+
+                  <div class="profesii-img odin">
+                    <h3>Разработчик программного обеспечения</h3>
+                    <p>Научитесь создавать и поддерживать рабочее программное обеспечение для различных систем.</p>
+                    <a href="link_to_the_course1">Узнать больше</a>
+                  </div>
+
+                   <div class="profesii-img dva">
+                    <h3>Веб-разработчик</h3>
+                    <p>Станьте мастером фронта и бэкенда с нашими курсами по веб-разработке.</p>
+                    <a href="link_to_the_course2">Узнать больше</a>
+                  </div>
+
+                   <div class="profesii-img tri">
+                    <h3>Разработчик мобильных приложений</h3>
+                    <p>Разрабатывайте приложения для iOS и Android, которые покорят миллионы пользователей.</p>
+                    <a href="link_to_the_course3">Узнать больше</a>
+                  </div>
+
+                   <div class="profesii-img chetire">
+                    <h3>Системный аналитик</h3>
+                    <p>Изучите все о системах и их анализе для улучшения бизнес-процессов.</p>
+                    <a href="link_to_the_course4">Узнать больше</a>
+                  </div>
+
+                   <div class="profesii-img pati">
+                    <h3>Сетевой администратор</h3>
+                    <p>Получите знания для управления и поддержания работоспособности сетевой инфраструктуры компании.</p>
+                    <a href="link_to_the_course5">Узнать больше</a>
+                  </div>
+
+                   <div class="profesii-img shesti">
+                    <h3>Администратор баз данных</h3>
+                    <p>Освоите навыки работы с базами данных для хранения и организации важнейших данных.</p>
+                    <a href="link_to_the_course6">Узнать больше</a>
+                  </div>
+
+                 </div>
+               </div>
+             </div>
+             
+         </div>
+
+       <!-- . -->
+
+         <div class="footer"> 
+
+            <div class="kirpich7">
+               <div class="osnova-pod-footer">
+
+                   <div class="ssilki">
+                      <div class="osnova-pod-ssilki">
+<!-- -------------------- --><!-- -------------------- -->
+                         <div class="vk">
+
+                            <div class="foto-vk">
+
+                            </div>
+                            
+                            <div class="osnova-nadpis2">
+                              <a href="https://vk.com/konstantin_muravyov" class="nadpis2 nadpis2-centered custom-link">
+                               <div class="nadpis2 nadpis2-centered">
+                                   VK
+                               </div>
+                              </a>
+                           </div>
+
+                         </div>
+<!-- -------------------- --><!-- -------------------- -->
+                         <div class="steam">
+
+                           <div class="foto-steam">
+
+                           </div>
+
+                           <div class="osnova-nadpis2">
+                            <a href="https://steamcommunity.com/profiles/76561199397815883/" class="nadpis2 nadpis2-centered custom-link">
+                              <div class="nadpis2 nadpis2-centered">
+                                  Steam
+                              </div>
+                             </a>
+                           </div>
+                         </div>
+<!-- -------------------- --><!-- -------------------- -->
+                         <div class="discord">
+                           <div class="foto-discord">
+                               
+                           </div>
+
+                           <div class="osnova-nadpis2">
+                            <a href="https://discordapp.com/users/610060514118205442/" class="nadpis2 nadpis2-centered custom-link">
+                              <div class="nadpis2 nadpis2-centered">
+                                  Discord
+                              </div>
+                             </a>
+                           </div>
+                         </div>
+
+                      </div>
+                   </div>
+<!-- -------------------- --><!-- -------------------- -->
+                   <div class="avtor">
+                        Константин
+                   </div>
+
+               </div>
+            </div>
+            <div class="kirpich8">
+
+            </div>
+
+         </div>
+         <!-- футер -->
+     </div>
+     <!-- основа -->
+</body>
+</html>

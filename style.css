@@ -1,0 +1,459 @@
+.osnova
+{
+    width: auto;
+    height: auto;
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+.header
+{
+    width: auto;
+    height: auto;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+.footer
+{
+  width: auto;
+  height: auto;
+  /* border: 1px  rgb(0, 51, 255) solid; */
+}
+/* _______________________________________________Кирпичи_______________________________________________ */
+.kirpich1
+{
+    width: auto;
+    height: auto;
+    /* border: 1px solid black; */
+
+}
+.kirpich2
+{
+    width: auto;
+    height: auto;
+    /* background-color: #006aff; */
+    background: url(foto/fon2.png) ;
+    /* border: 1px solid black;   */
+}
+.kirpich3
+{
+   width: auto;
+    height: auto;
+    /* border: 1px solid black; */
+    background: url(foto/fon2.jpg) ;
+}
+.kirpich7
+{
+  width: auto;
+  height: auto;
+  border: 1px  solid;
+  background-color: #222222;
+}
+/* _______________________________________________Основы_______________________________________________ */
+.pod-menu-i-logo
+{
+    width: auto;
+    height: auto;
+    /* border: 2px solid rgb(255, 0, 187); */
+    display: flex;
+    background-color: #f8f8f8;
+   
+}
+.osnova-pod-logo
+{
+    width: 206px;
+    height: 75px;
+    /* border: 2px solid rgb(170, 0, 255); */
+    background: url(foto/logo2.jpg) no-repeat;
+}
+.osnova-pod-menu
+{
+    width: 48%;
+    height: 75px;
+    /* border: 2px solid rgb(0, 255, 0); */
+    display: flex;
+}
+.osnova-pod-zagolovok
+{
+    width: auto;
+    height: auto;
+    /* border: 1px solid rgb(255, 251, 0); */
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+.osnova-zagolovka
+{
+  width: 744px;
+  height: 346px;
+  /* border: 1px solid rgb(255, 251, 0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.osnova-zagolovka .zagolovok a 
+{
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  opacity: 0; 
+  animation: fadeIn 1s ease forwards, pulse 2s ease-in-out infinite 1s; 
+}
+.osnova-zagolovka .zagolovok a:hover 
+{
+  animation: pulse 2s ease-in-out infinite;
+}
+.osnova-pod-napravlenia
+{
+   width: 90%;
+   height: 860px;
+   /* border: 1px saddlebrown solid; */
+   margin: auto;
+}
+.osnova-pod-footer
+{
+  width:auto;
+  height: 60%;
+  /* border: 1px firebrick solid; */
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+}
+.osnova-pod-ssilki
+{
+  width: 40%;
+  height: 100%;
+  /* border: 1px white solid; */
+  display: grid;
+}
+.osnova-nadpis2
+{
+  width: 100%;
+  height: auto;
+  /* border: 1px magenta solid;  */
+  display: flex;
+  
+}
+/* _______________________________________________Кнопки_______________________________________________ */
+.knopka1
+{
+    /* width: 100px;
+    height: 50px; */
+    /* border: 2px solid rgb(255, 0, 0); */
+    margin: auto;
+    background-color: #f8f8f8;
+}
+.knopka2
+{
+    /* width: 100px;
+    height: 50px; */
+    /* border: 2px solid rgb(221, 255, 0); */
+    margin: auto;
+    background-color: #f8f8f8;
+    
+}
+.knopka3
+{
+    /* width: 100px;
+    height: 50px; */
+    /* border: 2px solid rgb(0, 255, 55); */
+    margin: auto;
+    background-color: #f8f8f8;
+}
+.knopka4
+{
+    /* width: 100px;
+    height: 50px; */
+    /* border: 2px solid rgb(0, 255, 55); */
+    margin: auto;
+    background-color: #f8f8f8;
+}
+/* _______________________________________________Надписи_______________________________________________ */
+.nadpis1
+{
+    color: #000000;
+    line-height: 1;
+    font-size: 1.0rem;
+    transition-duration: 0.25s;
+    /* text-decoration: none; */
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+.nadpis1:hover
+{
+    color:#006aff ;
+}
+.nadpisi
+{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    width: 60%;
+    margin-left: auto;
+}
+
+.nadpis2-centered {
+  text-align: left; /* Выравнивание текста по левому краю */
+  padding-left: 10px; /* Отступ слева */
+  font-family: 'Arial', sans-serif; /* Шрифт */
+  color: #bdbdbd; /* Цвет текста */
+  font-size: 16px; /* Размер шрифта */
+  font-weight: bold; /* Жирность шрифта */
+}
+/* _______________________________________________Фон_______________________________________________ */
+.odin {
+   background-image: url('foto/fon3.jpg');
+   /* background-size: cover; */
+}
+.dva
+{
+  background-image: url('foto/fon4.jpg');
+  background-size: cover;
+}
+.tri
+{
+  background-image: url('foto/fon5.jpg');
+}
+.chetire
+{
+  background-image: url('foto/fon6.jpg');
+}
+.pati
+{
+  background-image: url('foto/fon7.jpg');
+}
+.shesti
+{
+  background-image: url('foto/fon8.jpg');
+}
+.foto-vk
+{
+height: auto;
+width: 21%;
+/* border: 1px orange solid; */
+margin-left: 8px;
+background-image: url('foto/VK.jpg') ;
+background-size: cover;
+}
+.foto-steam 
+{
+  height: auto;
+  width: 21%;
+  /* border: 1px orange solid; */
+  margin-left: 8px;
+  background-image: url('foto/Steam.jpg') ;
+background-size: cover;
+}
+.foto-discord
+{
+  height: auto;
+  width: 21%;
+  /* border: 1px orange solid; */
+  margin-left: 8px;
+  background-image: url('foto/discord.jpg') ;
+background-size: cover;
+}
+/* _______________________________________________Прочее_______________________________________________  */
+form 
+{
+  background-color: #4654e1;
+  width: 525px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+input 
+{
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+::placeholder 
+{
+    color: #fff;
+    opacity: 0.7; 
+}
+button 
+{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+svg 
+{
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+.highlight 
+{
+     background-color: yellow;
+     font-weight: bold;
+}
+.poisk-stroka
+{
+  width: 526px;
+  height: auto;
+  /* border: 1px solid rgb(255, 251, 0); */
+  margin-top: 6%;
+  margin-left: 16%;
+}
+.zagolovok
+{
+    width: auto;
+    height: 40%;
+    /* border: 1px solid rgb(255, 0, 0); */
+    margin: auto;
+}
+@keyframes fadeIn 
+{
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse 
+{
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.fon
+{
+  width: 745px;
+  height: 491px;
+  /* border: 2px solid rgb(8, 0, 255); */
+  margin-left: 20%;
+  background: url(foto/fon1.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slide 5s linear infinite;
+  border-radius: 20px;
+    
+}
+@keyframes slide 
+{
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+.napravlenia
+{
+   width: 98%;
+   height: 98%;
+   /* border: 1px saddlebrown solid; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.profesii-img
+{
+  width: 300px;
+  height: 400px;
+  border: 1px solid rgba(0, 217, 255, 0.5);
+  margin: 10px; 
+  box-sizing: border-box;
+  background-color: #ffffff; 
+  color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  padding: 15px;
+}
+.profesii-img:hover 
+{
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); 
+}
+.profesii-img h3,
+.profesii-img p,
+.profesii-img a 
+{
+  margin: 10px 0; 
+}
+.profesii-img a {
+  color: #006aff;
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.2s ease; 
+}
+.profesii-img a:hover 
+{
+  color: #00407a;
+}
+.profesii-img:hover 
+{
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.ssilki
+{
+ width: 50%;
+ height: 160px;
+ /* border: 1px blue solid; */
+}
+.avtor
+{
+  width: 50%;
+  height: auto;
+  /* border: 1px red  solid;  */
+  text-align: right;
+  font-weight: bold;
+  color: #848484;
+  font-size: 1.2em;
+  font-style: italic;
+  padding-right: 10px;
+  border-right: 3px solid #797979; /* Добавляем линию справа от текста */
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2); /* Добавляем небольшую тень для эффекта всплывания текста */
+  font-family: 'Georgia', serif;
+}
+.vk
+{
+  width: 100%;
+  height: 40px;
+  /* border: 1px rgb(0, 255, 55)  solid;  */
+  margin: auto;
+  display: flex;
+}
+.steam
+{
+  width: 100%;
+  height: 40px;
+  /* border: 1px rgb(255, 0, 157)  solid;  */
+  margin: auto;
+  display: flex;
+}
+.discord
+{
+  width: 100%;
+  height: 40px;
+  /* border: 1px rgb(0, 255, 145)  solid;  */
+  margin: auto;
+  display: flex;
+}
+.custom-link {
+  text-decoration: none; /* Убирает подчёркивание */
+  color: inherit; /* Цвет текста наследуется от родителя */
+}
+
+.custom-link:hover {
+  text-decoration: none; /* Убирает подчёркивание при наведении */
+}
+
+
